@@ -40,8 +40,7 @@
 		"swiper": "^11.0.5"
 	},
 	"scripts": {
-		"dev": "gulp"
+		"dev": "gulp",
+		"build": "gulp build"
 	}
-
-	
 }
