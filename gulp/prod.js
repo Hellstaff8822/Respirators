@@ -124,7 +124,3 @@ gulp.task('server:prod', function () {
 	return gulp.src('./prod/').pipe(server(serverOptions));
 });
 
-gulp.task('build:prod', gulp.series(
-	'clean:prod',
-	gulp.parallel('html:prod', 'sass:prod', 'images:prod', 'fonts:prod', 'files:prod', 'js:prod')
-  ));
