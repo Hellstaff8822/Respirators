@@ -1,0 +1,37 @@
+.advantages {
+  display: flex;
+  gap: 31rem;
+  margin-top: 72rem;
+  @include tablet{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.advantages-item {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 270rem;
+  &__img{}
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 25rem;
+  }
+
+  &__name {
+    color: rgb(12, 18, 45);
+    font-size: 20rem;
+    font-weight: 700;
+    line-height: 28rem;
+    margin-bottom: 15rem;
+  }
+
+  &__desc {
+    color: rgb(87, 92, 116);
+    font-size: 15rem;
+    font-weight: 400;
+    width: 210rem;
+  }
+}

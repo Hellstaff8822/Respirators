@@ -1,0 +1,94 @@
+.reviews {
+  margin-top: 130rem;
+  @include mobile {
+    margin-top: 70rem;
+  }
+  &__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 100rem;
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+      gap: 60rem;
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__company {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50rem;
+    @include tablet {
+      margin-bottom: 30rem;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    img{
+      width: 20rem;
+    }
+  }
+
+  &__text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18rem;
+    line-height: 150%;
+    color: var(--dark-1-122d);
+    margin-bottom: 40rem;
+  }
+
+  &__info {
+    display: flex;
+    gap: 17rem;
+  }
+  &__desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 20rem;
+    line-height: 150%;
+    color: var(--dark-1-122d);
+  }
+
+  &__pos {
+    font-weight: 400;
+    font-size: 15rem;
+    line-height: 147%;
+    color: var(--grey);
+  }
+}
+.company-icon {
+  font-size: 24px;
+}
+
+.fa-star {
+  color: #ffb612;
+}
+
+.reviews-google {
+  color: #d6e2f4;
+}
+.reviews-yelp {
+  color: #d6e2f4;
+  width: 24rem;
+}
+
+.reviews-facebook {
+  color: #d6e2f4;
+  width: 24rem;
+}

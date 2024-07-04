@@ -1,0 +1,77 @@
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 88rem;
+  margin-top: 84rem;
+  @include tablet{
+    flex-direction: column;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__mask {
+    color: rgb(255, 184, 0);
+    font-family: Rubik;
+    font-size: 14rem;
+    font-weight: 500;
+    line-height: 30rem;
+  }
+
+  &__title {
+    color: rgb(12, 18, 45);
+    font-family: Rubik;
+    font-size: 72rem;
+    font-weight: 700;
+    line-height: 82rem;
+    margin-top: 30rem;
+  }
+
+  &__desc {
+    color: rgb(87, 92, 116);
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 24rem;
+    margin-top: 40rem;
+  }
+
+  &__btn {
+    display: flex;
+    gap: 20rem;
+    margin-top: 54rem;
+  
+  }
+
+  &__first {
+    color: rgb(255, 255, 255);
+    font-family: Rubik;
+    font-size: 14rem;
+    font-weight: 500;
+    line-height: 30rem;
+    text-align: center;
+  }
+
+  &__second {
+    color: rgb(255, 184, 0);
+    font-family: Rubik;
+    font-size: 14rem;
+    font-weight: 500;
+    line-height: 30rem;
+    text-align: center;
+    border: 1rem solid rgb(255, 184, 0);
+    background: none;
+    transition: var(--transition);
+    &:hover{
+      background: rgb(255, 184, 0);
+    }
+  }
+
+  &__img {
+    display: flex;
+    img{
+      flex-shrink: 0;
+    }
+  }
+}

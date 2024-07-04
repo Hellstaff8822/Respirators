@@ -1,0 +1,98 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 73rem;
+  @include tablet {
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1rem solid #e1e6ec;
+    padding-bottom: 32rem;
+    gap: 200rem;
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      gap: 70rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 33rem;
+    img{
+      width: 100rem;
+    cursor: pointer;
+    }
+    @include tablet{
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    width: 340rem;
+    font-weight: 400;
+    font-size: 15rem;
+    line-height: 160%;
+    color: var(--grey);
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20rem;
+    line-height: 150%;
+    color: var(--dark-1-122d);
+    margin-bottom: 21rem;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 13rem;
+    font-weight: 400;
+    font-size: 15rem;
+    line-height: 200%;
+    color: var(--grey);
+    transition: var(--transition);
+    &:hover {
+      color: rgb(255, 184, 0);
+    }
+  }
+
+  &__bottom {
+    margin-bottom: 30rem;
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 214%;
+    color: var(--grey);
+    margin-top: 31rem;
+    text-align: center;
+  }
+}
+
+.footer-facebook {
+  color: #1b5fc1;
+}
+
+.footer-twitter {
+  color: #1b5fc1;
+}
+.footer-google {
+  color: #1b5fc1;
+}
+.footer-youtube {
+  color: #1b5fc1;
+}
+.footer-linkedin {
+  color: #1b5fc1;
+}

@@ -1,0 +1,147 @@
+.factory {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @include tablet {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 10rem;
+  }
+
+  &__image {
+    display: flex;
+    position: relative;
+    @include tablet-small{
+    }
+
+    img {
+      flex-shrink: 0;
+      border-radius: 0 0 20rem 0;
+    }
+  }
+  &__info {
+    @include tablet {
+    }
+  }
+  &__reliability {
+    font-weight: 400;
+    font-size: 15rem;
+    line-height: 160%;
+    color: #fff;
+    background: #1b5fc1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 285rem;
+    padding: 60rem 30rem 80rem 30rem;
+    text-align: center;
+  }
+
+  &__text {
+    display: flex;
+  }
+
+  &__achievements {
+    font-weight: 400;
+    font-size: 15rem;
+    line-height: 160%;
+    color: #575c74;
+    padding: 80rem 30rem 132rem 30rem;
+  }
+
+  &__expectations {
+    font-weight: 400;
+    font-size: 15rem;
+    line-height: 160%;
+    color: #fff;
+    border-radius: 0 20rem 0 0;
+    background: #1b5fc1;
+    padding: 80rem 30rem 132rem 30rem;
+    @include tablet {
+      border-radius: 0;
+    }
+  }
+}
+
+.factory-made {
+  border-radius: 0 0 20rem 0;
+  background: var(--accent);
+  padding: 45rem 40rem;
+  @include tablet {
+    border-radius: none;
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20rem;
+    line-height: 250%;
+    color: var(--dark-1-122d);
+  }
+
+  &__desc {
+    font-family: var(--ff);
+    font-weight: 400;
+    font-size: 15rem;
+    line-height: 160%;
+    color: #000;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    gap: 81rem;
+    margin-top: 28rem;
+  }
+
+  &__btn {
+    border: 1rem solid var(--blue);
+    border-radius: 8rem;
+    padding: 16rem 24rem;
+    background: none;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 14rem;
+    text-align: center;
+    position: relative;
+    color: var(--blue);
+    &:hover{
+      background: rgb(27, 95, 193);
+    }
+    &::before {
+      content: "";
+      width: 1rem;
+      height: 46rem;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      right: -42rem;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 13rem;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+  }
+  &__name {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14rem;
+    color: var(--blue);
+    margin-bottom: 10rem;
+  }
+  &__phone {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24rem;
+    line-height: 100%;
+    transition: var(--transition);
+    color: #000;
+    &:hover{
+      color: var(--blue);
+    }
+  }
+}

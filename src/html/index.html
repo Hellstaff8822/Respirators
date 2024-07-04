@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gulp Starter Project my LemonSchool</title>
+    <link rel="icon" type="image/png" href="/img/icon/laboratory.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+      
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+      @@include('blocks/header.html') 
+      @@include('blocks/hero.html')
+      @@include('blocks/advantages.html') 
+      @@include('blocks/respirators.html') 
+      @@include('blocks/factory.html') 
+      @@include('blocks/certification.html')
+      @@include('blocks/reasons.html')
+      @@include('blocks/reviews.html')
+      @@include('blocks/step.html')
+      @@include('blocks/contacts.html')
+      @@include('blocks/footer.html')
+   
+
+    <script src="./js/index.bundle.js"></script>
+    <script>
+      function navToggle() {
+        document.getElementById("headerUl").classList.toggle("_active");
+        document.getElementById("headerBackdrop").classList.toggle("_active");
+      }
+    </script>
+  </body>
+</html>

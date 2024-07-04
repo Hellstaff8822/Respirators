@@ -1,0 +1,35 @@
+.certification {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  @include tablet{
+     flex-direction: column;
+     gap: 20px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--grey);
+    margin-right: 18px;
+  }
+
+  &__line {
+    width: 147px;
+    height: 1px;
+    background: var(--accent);
+    margin-right: 87px;
+    @include tablet{
+      margin-right: 0;
+    }
+  }
+
+  &__company {
+    display: flex;
+    align-items: center;
+    gap: 99px;
+    @include mobile{
+      flex-direction: column;
+   }
+  }
+}

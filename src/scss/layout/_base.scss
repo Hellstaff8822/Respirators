@@ -1,0 +1,46 @@
+html {
+  font-size: 1px;
+  @include desktop-small {
+    font-size: 0.9px;
+  }
+  @include tablet {
+    font-size: 0.85px;
+  }
+
+  @include tablet-small {
+    font-size: 0.8px;
+  }
+
+  @include mobile {
+    font-size: 0.7px;
+  }
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: var(--ff);
+}
+.container {
+  max-width: 1154rem;
+  width: 100%;
+  margin-inline: auto;
+  padding: 0 20rem;
+}
+
+.btn {
+  border-radius: 8rem;
+  background: rgb(27, 95, 193);
+  padding: 10rem 25rem;
+  transition: 0.3s all ease-in-out;
+  &:hover {
+    background: rgb(0, 46, 161);
+    color: black;
+  }
+}
+h2 {
+  margin: 0;
+}

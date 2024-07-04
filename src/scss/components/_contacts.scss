@@ -1,0 +1,144 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1141rem;
+    padding: 41rem 20px 41rem 20px;
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      gap: 35rem;
+    }
+  }
+}
+.contacts-address {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 52rem;
+    background: #e0e0e0;
+    top: 0;
+    right: -138rem;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20rem;
+    line-height: 150%;
+    color: var(--dark-1-122d);
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 15rem;
+    line-height: 133%;
+    color: var(--dark-1-122d);
+    transition: var(--transition);
+    &:hover {
+      color: var(--blue);
+    }
+  }
+}
+.contacts-calls {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 52rem;
+    background: #e0e0e0;
+    top: 0;
+    right: -137rem;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20rem;
+    line-height: 150%;
+    color: var(--dark-1-122d);
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 15rem;
+    line-height: 133%;
+    color: var(--dark-1-122d);
+    transition: var(--transition);
+    &:hover {
+      color: var(--blue);
+    }
+  }
+  @include mobile {
+    margin-right: 98rem;
+  }
+}
+.contacts-email {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+  cursor: pointer;
+  @include mobile {
+    margin-right: 78rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20rem;
+    line-height: 150%;
+    color: var(--dark-1-122d);
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 15rem;
+    line-height: 133%;
+    color: var(--dark-1-122d);
+    transition: var(--transition);
+    &:hover {
+      color: var(--blue);
+    }
+  }
+}
