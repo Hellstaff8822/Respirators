@@ -10,24 +10,19 @@
   &__image {
     display: flex;
     position: relative;
-    @include tablet-small{
-    }
-
     img {
       flex-shrink: 0;
       border-radius: 0 0 20rem 0;
+      object-fit: cover;
     }
   }
-  &__info {
-    @include tablet {
-    }
-  }
+
   &__reliability {
     font-weight: 400;
     font-size: 15rem;
     line-height: 160%;
     color: #fff;
-    background: #1b5fc1;
+    background: var(--blue);
     position: absolute;
     bottom: 0;
     right: 0;
@@ -44,7 +39,7 @@
     font-weight: 400;
     font-size: 15rem;
     line-height: 160%;
-    color: #575c74;
+    color: var(--grey);
     padding: 80rem 30rem 132rem 30rem;
   }
 
@@ -54,7 +49,7 @@
     line-height: 160%;
     color: #fff;
     border-radius: 0 20rem 0 0;
-    background: #1b5fc1;
+    background: var(--blue);
     padding: 80rem 30rem 132rem 30rem;
     @include tablet {
       border-radius: 0;
@@ -104,7 +99,7 @@
     text-align: center;
     position: relative;
     color: var(--blue);
-    &:hover{
+    &:hover {
       background: rgb(27, 95, 193);
     }
     &::before {
@@ -140,7 +135,7 @@
     line-height: 100%;
     transition: var(--transition);
     color: #000;
-    &:hover{
+    &:hover {
       color: var(--blue);
     }
   }

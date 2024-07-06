@@ -1,0 +1,13 @@
+:root {
+  --ff: "Open Sans", sans-serif;
+  --second-family: "Rubik", sans-serif;
+  --third-family: "Roboto", sans-serif;
+  --transition: 0.2s all ease-in-out;
+  --grey: #575c74;
+  --blue: #1b5fc1;
+  --accent: #ffb800;
+  --c-desc: rgb(87, 92, 116);
+  --c-title: rgb(12, 18, 45);
+  --title: 700 48rem / normal var(--second-family);
+  --desc: 400 16rem / normal var(--ff);
+}

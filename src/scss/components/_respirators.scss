@@ -4,10 +4,9 @@
   align-items: center;
   margin-top: 133rem;
   margin-bottom: 101rem;
-  @include tablet{
+  @include tablet {
     margin-top: 70rem;
   }
-
 
   &__block {
     display: flex;
@@ -16,29 +15,27 @@
 .respirators-info {
   display: flex;
   gap: 25rem;
-  @include tablet{
+  @include tablet {
     flex-direction: column;
   }
   &__title {
-    color: rgb(12, 18, 45);
-    font-family: Rubik;
-    font-size: 48rem;
-    font-weight: 700;
+    font: var(--title);
+    line-height: 104%;
+    color: var(--c-title);
     line-height: 50rem;
     margin-bottom: 26rem;
   }
 
   &__text {
-    color: rgb(87, 92, 116);
-    font-size: 16rem;
-    font-weight: 400;
+    font: var(--desc);
+    color: var(--c-desc);
     line-height: 30rem;
     span {
       color: rgb(87, 92, 116);
       font-weight: 700;
     }
   }
-  img{
+  img {
     border-radius: 16rem;
   }
 }

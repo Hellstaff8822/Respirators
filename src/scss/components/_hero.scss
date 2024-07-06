@@ -14,25 +14,23 @@
 
   &__mask {
     color: rgb(255, 184, 0);
-    font-family: Rubik;
+    font-family: var(--second-family);
     font-size: 14rem;
     font-weight: 500;
     line-height: 30rem;
   }
 
   &__title {
-    color: rgb(12, 18, 45);
-    font-family: Rubik;
+    color: var(--c-title);
+    font-family: var(--second-family);
     font-size: 72rem;
-    font-weight: 700;
     line-height: 82rem;
     margin-top: 30rem;
   }
 
   &__desc {
-    color: rgb(87, 92, 116);
-    font-size: 16rem;
-    font-weight: 400;
+    font: var(--desc);
+    color: var(--c-desc);
     line-height: 24rem;
     margin-top: 40rem;
   }
@@ -46,7 +44,7 @@
 
   &__first {
     color: rgb(255, 255, 255);
-    font-family: Rubik;
+    font-family: var(--second-family);
     font-size: 14rem;
     font-weight: 500;
     line-height: 30rem;
@@ -55,7 +53,7 @@
 
   &__second {
     color: rgb(255, 184, 0);
-    font-family: Rubik;
+    font-family: var(--second-family);
     font-size: 14rem;
     font-weight: 500;
     line-height: 30rem;

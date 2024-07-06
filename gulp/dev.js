@@ -66,7 +66,7 @@ gulp.task('images:dev', function () {
 	return gulp
 		.src('./src/img/**/*')
 		.pipe(changed('./build/img/'))
-		// .pipe(imagemin({ verbose: true }))
+		.pipe(imagemin({ verbose: true }))
 		.pipe(gulp.dest('./build/img/'));
 });
 
@@ -89,7 +89,7 @@ gulp.task('js:dev', function () {
 		.src('./src/js/*.js')
 		.pipe(changed('./build/js/'))
 		.pipe(plumber(plumberNotify('JS')))
-		// .pipe(babel())
+		.pipe(babel())
 		.pipe(webpack(require('./../webpack.config.js')))
 		.pipe(gulp.dest('./build/js/'));
 });

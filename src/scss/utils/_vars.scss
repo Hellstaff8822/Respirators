@@ -5,20 +5,18 @@ $tablet-small: 768px;
 $mobile: 576px;
 
 :root {
-  --ff: 'Open Sans', sans-serif;
+  --ff: "Open Sans", sans-serif;
   --second-family: "Rubik", sans-serif;
   --third-family: "Roboto", sans-serif;
   --transition: 0.2s all ease-in-out;
 
-  --dark-1-122d: #0c122d;
-	--grey: #575c74;
-	--blue: #1b5fc1;
-	--accent: #ffb800;
+  --grey: #575c74;
+  --blue: #1b5fc1;
+  --accent: #ffb800;
+  --c-desc: rgb(87, 92, 116);
+  --c-title: rgb(12, 18, 45);
 
-  --header: 700 16px / normal var(--ff);
 
-  --title: 700 46px / normal var(--ff-second);
-  --t-accordion: 700 20px / normal var(--ff-second);
-  --d-accordion: 400 16px / normal var(--ff)
-  --desc: 400 20px / normal var(--ff);
+  --title: 700 48rem / normal var(--second-family);
+  --desc: 400 16rem / normal var(--ff);
 }

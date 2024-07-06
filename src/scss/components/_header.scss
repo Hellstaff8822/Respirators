@@ -45,7 +45,7 @@
       flex-direction: column;
       left: 0;
       top: 0;
-      background: var(--c-primary);
+      background: rgba(0, 0, 0, 0.6);
       align-items: center;
       justify-content: center;
       transform: translateX(-120%);
@@ -65,7 +65,7 @@
   }
   &__btn {
     color: rgb(255, 255, 255);
-    font-family: Rubik;
+    font-family: var(--second-family);
     font-size: 14px;
     font-weight: 500;
     line-height: 30px;

@@ -5,23 +5,24 @@
   margin-top: 88rem;
   margin-bottom: 128rem;
   &__title {
-    font-family: var(--second-family);
-    font-weight: 700;
-    font-size: 48rem;
-    color: var(--dark-1-122d);
+    font: var(--title);
+    color: var(--c-title);
     margin-bottom: 20rem;
-    @include mobile{
+    @include mobile {
       text-align: center;
     }
   }
 
   &__desc {
-    font-weight: 400;
-    font-size: 16rem;
-    color: var(--grey);
+    font: var(--desc);
+    color: var(--c-desc);
     text-align: center;
     line-height: 187%;
     margin-bottom: 35rem;
+    width: 664rem;
+    @include mobile {
+      width: 375rem;
+    }
   }
 
   &__btn {

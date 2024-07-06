@@ -21,11 +21,9 @@
   }
 
   &__title {
-    font-family: var(--second-family);
-    font-weight: 700;
-    font-size: 48px;
+    font: var(--title);
     line-height: 104%;
-    color: var(--dark-1-122d);
+    color: var(--c-title);
     margin-bottom: 16px;
   }
 
